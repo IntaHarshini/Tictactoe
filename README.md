@@ -47,3 +47,44 @@ On one terminal or machine (host/server):
 
 ```bash
 python3 server.py
+
+
+You'll be asked to enter player names for Player X and Player O. The server will then wait for two clients to connect.
+
+2. Start the Clients
+On two different terminals or machines (clients):
+
+```bash
+python3 client.py
+Clients will automatically connect and be paired for a game.
+
+3. Play the Game
+Players take turns by entering positions (1–9).
+Each player has 10 seconds to make a move.
+The server announces the winner or tie.
+After each game, players are prompted for a rematch.
+
+🌐 Network Requirements
+All devices must be on the same local network.
+Server IP 127.0.0.1 is for local testing.
+For LAN play, replace it with the host machine's IP address in both server.py and client.py.
+
+📂 Files Overview
+server.py – Manages connections, gameplay, validation, and leaderboard.
+client.py – Connects to server, handles user input/output.
+leaderboard.json – Auto-generated file storing win/loss/tie records persistently.
+
+🏁 Conclusion
+This project demonstrates:
+Socket-based multiplayer game logic
+Real-time client-server communication
+Multithreaded server handling for concurrent gameplay
+Timeout enforcement and fair-play features
+
+---
+
+✅ **Copy-paste the entire code above into your `README.md` file**, and it will render perfectly.
+
+Would you like me to generate a `.md` file you can download directly?
+
+
