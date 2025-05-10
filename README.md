@@ -26,3 +26,40 @@ A terminal-based, real-time multiplayer Tic Tac Toe game where two clients conne
 ### 1. Start the Server
 ```bash
 python3 server.py
+
+
+Enter names for both players when prompted.
+
+2. Start the Clients
+In two different terminals:
+
+bash
+Copy
+Edit
+python3 client.py
+The game will begin automatically when two players join.
+
+📁 Project Structure
+server.py – Handles gameplay, timing, rematches, leaderboard
+
+client.py – User interface and interaction
+
+leaderboard.json – Stores scores
+
+README.md – Documentation
+
+🧰 Technologies Used
+Python 3
+
+socket – For networking
+
+threading – For handling multiple clients
+
+time – For timeout logic
+
+json – For leaderboard
+
+👤 Author
+Harshini Inta
+
+
