@@ -1,0 +1,42 @@
+{
+  "harshi": {
+    "wins": 1,
+    "losses": 1,
+    "ties": 0
+  },
+  "vikas": {
+    "wins": 1,
+    "losses": 1,
+    "ties": 0
+  },
+  "har": {
+    "wins": 3,
+    "losses": 0,
+    "ties": 0
+  },
+  "vik": {
+    "wins": 0,
+    "losses": 3,
+    "ties": 0
+  },
+  "alice": {
+    "wins": 2,
+    "losses": 0,
+    "ties": 0
+  },
+  "bob": {
+    "wins": 0,
+    "losses": 2,
+    "ties": 0
+  },
+  "harshini": {
+    "wins": 0,
+    "losses": 1,
+    "ties": 0
+  },
+  "indira": {
+    "wins": 1,
+    "losses": 0,
+    "ties": 0
+  }
+}
