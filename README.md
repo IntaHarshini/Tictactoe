@@ -3,63 +3,67 @@ Multiplayer Tic Tac Toe game using Python sockets with two clients playing again
 
 
 
-# 🕹️ Multiplayer Tic Tac Toe using Python Sockets
+# 🎮 Multiplayer Tic Tac Toe Game Using Python Sockets
 
-A terminal-based, real-time multiplayer Tic Tac Toe game where two clients connect to a server. Includes a leaderboard, rematch option, and move timeout.
+This is a multiplayer Tic Tac Toe game built in Python using socket programming. The server handles client connections, pairing them together when the number of clients is even, or playing against the last unpaired client if the number is odd. The game ensures proper state management and secure communication between clients and the server.
 
-## 📌 Features
+---
 
-- Two-player multiplayer over TCP
-- 10-second timeout per move
-- Rematch option after each game
-- Persistent leaderboard (wins, losses, ties)
-- Turn-based game logic
-- Text-based terminal interface
+## 🚀 Features
 
-## 🛠 Requirements
+- **Socket-based multiplayer**: Clients communicate with the server to play the game.
+- **Even client pairing**: When the number of clients is even, clients are paired to play against each other.
+- **Server-player for odd clients**: If the number of clients is odd, the last unpaired client plays against the server.
+- **Unique symbols**: Each player receives a distinct symbol (X or O) for gameplay.
+- **Game state management**: The game ensures the state is properly updated and displayed during play.
+- **Real-time game display**: The game board is displayed in the terminal with each move.
+- **Client-Server communication**: Uses sockets to manage communication between multiple clients and the server.
 
-- Python 3.x installed
-- All files in the same directory
+---
 
-## 🚀 How to Run
+## 🧠 Technologies Used
 
-### 1. Start the Server
+| Component         | Tool/Library                   |
+|-------------------|---------------------------------|
+| Programming       | Python 3                        |
+| Networking        | socket                          |
+| Multithreading    | threading                       |
+
+---
+
+## 🖥️ How to Run This Project on Your Machine
+
+### 📋 Prerequisites
+
+Make sure you have Python 3 installed.
+Make sure that all the server and both the clients are under same network.
+
+### 🛠️ Steps to Run the Server and Client
+
+step1:
+Run the server code
 ```bash
-python3 server.py
+ server.py
+and then enter the names of the play
+
+step2:
+ open the client.py and update this line with your server's IP and Run the client
+```bash
+host = "xxx.xxx.xxx.xxx" #change this to your server's IP and Run the client
+Open two separate terminals and then
+```bash
+client.py
+
+step3:
+Now start playing the game 
+Move within 10seconds
+
+step4:
+choose for the rematch option(if required)
 
 
-Enter names for both players when prompted.
 
-2. Start the Clients
-In two different terminals:
 
-bash
-Copy
-Edit
-python3 client.py
-The game will begin automatically when two players join.
 
-📁 Project Structure
-server.py – Handles gameplay, timing, rematches, leaderboard
-
-client.py – User interface and interaction
-
-leaderboard.json – Stores scores
-
-README.md – Documentation
-
-🧰 Technologies Used
-Python 3
-
-socket – For networking
-
-threading – For handling multiple clients
-
-time – For timeout logic
-
-json – For leaderboard
-
-👤 Author
-Harshini Inta
 
 
